@@ -1,0 +1,36 @@
+{
+  "title": "Codex svar klart",
+  "default_body": "Agentens svar är klart.",
+  "sound_path": "C:\\Windows\\Media\\Speech Sleep.wav",
+  "enable_sound": true,
+  "sound_mode": "wav_primary_then_fallback",
+  "sound_sync": true,
+  "enable_toast": true,
+  "suppress_visual_when_codex_focused": true,
+  "suppress_sound_when_codex_focused": true,
+  "suppress_visual_process_names": [
+    "Codex.exe"
+  ],
+  "visual_mode": "mshta_popup",
+  "fallback_mode": "message_beep",
+  "debounce_seconds": 4.0,
+  "debounce_mode": "signature",
+  "log_path": "logs/notify_events.jsonl",
+  "log_max_bytes": 262144,
+  "log_backups": 3,
+  "state_path": "state/notify_state.json",
+  "visual_state_path": "state/visual_popup_state.json",
+  "popup_timeout_seconds": 10,
+  "popup_script_path": "notify_popup.hta",
+  "single_active_popup": true,
+  "replace_existing_popup": true,
+  "visual_mutex_name": "Local\\KRSCodexVisualPopupMutex",
+  "toast_app_id": "Windows PowerShell",
+  "toast_host_preference": [
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "powershell.exe",
+    "pwsh.exe"
+  ],
+  "max_message_chars": 140
+}
